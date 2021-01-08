@@ -4,7 +4,7 @@
 
 I'm a firm believer that when learning a new technology that keeping things simple in the first instance is of paramount importance.  Frankly all the frilly bits can come later!
 
-What I offer here is a basic example of deploying an AWS infrastructure using Terraform.  You can use this simple structure to deploy a Lambda function behind an API Gateway (API GW), the Lambda uses the simple code described in the *sample.js* file.
+What I offer here is a basic example of deploying an AWS infrastructure using Terraform.  You can use this simple structure to deploy a Static Website with an S3 Bucket, the content of the website is defined in the *index.html* file.
 
 Do not expect this to be complete with all industry best practices, however if you are new to working with Terraform then this could be a good sample project to start with! My hope is that you will find some use in 'poking' this implementation to see how it works and changing it to see how it breaks. Below I will explain what some important sections of the code are doing so that you can start to build your own deployments.
 
@@ -24,14 +24,6 @@ In this file the variables that are used by the project and the various modules 
 
 ### outputs.tf
 
-Often the least used of the 3 files, here the output from the resources created are defined.  This can be useful if you want to print some output to the console when the deployment is comepleted, as we are in this example.  This file can also be used to pass the output from one module to be used with another, you can also see an example of this here.
+Often the least used of the 3 files, here the output from the resources created are defined.  This can be useful if you want to print some output to the console when the deployment is completed, you can also use it to pass the output from one module to be used with another.
 
 ## Project Root
-
-## API_Gateway
-
-## Lambda
-
-```
-{"key":"value"}
-```
